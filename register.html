@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #141414;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .box {
+      background-color: #1f1f1f;
+      padding: 40px 30px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      background: #333;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 4px;
+      margin-top: 6px;
+    }
+
+    input:focus {
+      outline: 2px solid #e50914;
+    }
+
+    .strength {
+      height: 6px;
+      border-radius: 4px;
+      background-color: #444;
+      margin-top: 6px;
+      margin-bottom: 8px;
+      transition: width 0.3s ease;
+    }
+
+    .error {
+      font-size: 13px;
+      color: #ff4c4c;
+      height: 14px;
+      margin-top: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e50914;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f40612;
+    }
+
+    .msg {
+      margin-top: 18px;
+      font-size: 14px;
+      text-align: center;
+      color: #00e676;
+    }
+
+    .link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #e50914;
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      .box {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Sign Up</h1>
+    <form id="registerForm" novalidate>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+      <small id="usernameHelp" class="error"></small>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <small id="emailHelp" class="error"></small>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+      <div class="strength" id="strengthBar"></div>
+      <small id="passwordHelp" class="error"></small>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required />
+      <small id="confirmHelp" class="error"></small>
+
+      <label><input type="checkbox" id="togglePassword" /> Show Passwords</label>
+
+      <button type="submit">Register</button>
+      <p class="link">Already have an account? <a href="#">Sign In</a></p>
+    </form>
+    <div id="formFeedback" class="msg"></div>
+  </div>
+  <script src="register.js" defer></script>
+</body>
+</html>
