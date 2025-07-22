@@ -3,60 +3,102 @@
 [![GitHub Stars](https://img.shields.io/github/stars/dhruvjohri/netflix-clone?style=social)](https://github.com/dhruvjohri/netflix-clone/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/dhruvjohri/netflix-clone)](https://github.com/dhruvjohri/netflix-clone/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/dhruvjohri/netflix-clone)](https://github.com/dhruvjohri/netflix-clone/pulls)
-[![License](https://img.shields.io/github/license/dhruvjohri/netflix-clone)](LICENSE)
+
 
 ---
 
-## 📌 Project Overview
+## 📌 Overview
 
-A responsive and visually appealing clone of the **Netflix India landing page**, originally built by [Dhruv Johri](https://github.com/dhruvjohri).  
-This project is open-source and maintained under **GSSoC 2025** with enhancements by contributors like [Ardhaya Johari](https://github.com/Ardhaya-Johari).
+A clean and responsive **clone of Netflix India's homepage** built using HTML5 and CSS3 only.  
+Originally created by [Dhruv Johri](https://github.com/dhruvjohri) and now enhanced by open-source contributors under **GSSoC 2025**.
 
-It serves as a great frontend development practice project that mimics a real-world platform UI using HTML and CSS.
-
-![Netflix UI Screenshot](https://private-user-images.githubusercontent.com/187628847/469162243-314beb75-3147-4a76-a920-20dc6dd20693.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMxODM3OTgsIm5iZiI6MTc1MzE4MzQ5OCwicGF0aCI6Ii8xODc2Mjg4NDcvNDY5MTYyMjQzLTMxNGJlYjc1LTMxNDctNGE3Ni1hOTIwLTIwZGM2ZGQyMDY5My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMlQxMTI0NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMGI4ZDQ1YmViNDQ1ZTFhMTViZjQwNGJhYjY1MmE2ZDU1YmU5OTUyOTExMjFhMjliZDMzOTA4NGE1ZWQ1N2IyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Hex_NWAtwG4jfGW_9jO4B4dgeArrMsF7mqglPXLrGek)
+This project is a beginner-friendly frontend challenge focused on layout, responsiveness, and styling — mimicking real-world platforms.
 
 ---
 
-## 🛠 Tech Stack
+## 🖼️ Screenshot
 
-- **HTML5**  
-- **CSS3** (Flexbox, Grid, Media Queries)  
+![Netflix Clone Preview](https://private-user-images.githubusercontent.com/187628847/469162243-314beb75-3147-4a76-a920-20dc6dd20693.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMxODk0MDEsIm5iZiI6MTc1MzE4OTEwMSwicGF0aCI6Ii8xODc2Mjg4NDcvNDY5MTYyMjQzLTMxNGJlYjc1LTMxNDctNGE3Ni1hOTIwLTIwZGM2ZGQyMDY5My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMlQxMjU4MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MjZlNjQyOTU1ZDJmNjhlZDU5ZjZkNGNlMGE4YjkyZjI5ZGVkNzI3Mzk0OWYwMzQ4ZDNhNTQ3NDNlZWU2ZjMxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-O2qcxUg_Bloi95iKzlyei6y9dYDOE-Le7HRaKkei9o)
 
 ---
 
-## 🚀 Installation & Setup Guide
+## 🛠️ Tech Stack
 
-Follow these steps to run the project locally:
+- **HTML5**
+- **CSS3**
+  - Flexbox
+  - Grid Layout
+  - Media Queries
 
- **Clone the repository**
-   git clone https://github.com/dhruvjohri/netflix-clone.git\
-   cd netflix-clone
+---
 
-🤝 Contribution Guidelines
-We welcome contributions from everyone! 🙌
+## 🚀 Getting Started
 
-If you're part of GSSoC 2025 or just want to help improve this project, follow these steps:
+### 🧾 Prerequisites
+- Code editor (e.g., VS Code)
+- Browser (Chrome/Edge/Firefox)
+- Git (optional for cloning)
 
-Fork the repository
+### 🛠 Installation
 
-Create a new branch:
-git checkout -b feature/your-feature-name
+```bash
+# Clone the repo
+git clone https://github.com/dhruvjohri/netflix-clone.git
 
-Make your changes and commit:
-git commit -m "Added: meaningful description"
+# Navigate to the project folder
+cd netflix-clone
+```
 
-Push to your fork and submit a Pull Request
+Then open the `index.html` file in your browser.
 
-🧑‍💻 Credits
-👨‍🔧 Original Creator
-Dhruv Johri
+---
 
-🤝 GSSoC 2025 Contributor
-Ardhaya Johari
-✨ Enhanced README, added hover effects, modernized footer and responsiveness
+## 🤝 Contribution Guidelines
 
-📄 License
-This project is licensed under the MIT License.
-It is built purely for educational and demonstrative purposes. Netflix branding belongs to Netflix, Inc.
+We welcome all contributions from GSSoC 2025 participants and open-source enthusiasts.
 
+### 🛠 Steps to Contribute:
+
+1. **Fork** the repo
+2. **Create a branch**  
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Commit your changes**  
+   ```bash
+   git commit -m "Added: <feature/fix name>"
+   ```
+4. **Push your branch**  
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. **Open a Pull Request**
+
+Please ensure your changes are tested and follow clean coding standards.
+
+---
+
+## 👤 Contributors
+
+Thanks to these amazing contributors ✨:
+
+| Name              | GitHub Profile                                       | Role / Contributions                                      |
+|-------------------|------------------------------------------------------|-----------------------------------------------------------|
+| Dhruv Johri       | [@dhruvjohri](https://github.com/dhruvjohri)         | 💡 Original Creator                                        |
+| Ardhaya Johari    | [@Ardhaya-Johari](https://github.com/Ardhaya-Johari) | ✨ README Revamp, Footer Improvements, UI Enhancements     |
+| Your Name Here    | [@YourGitHub](https://github.com/YourGitHub)         | 🌱 _Contribute and get listed here!_                       |
+
+> Want to see your name here? Contribute and we’ll add you!
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+Netflix® branding, logos, and visuals are owned by **Netflix, Inc.** This clone is for **educational purposes only**.
+
+---
+
+## 🙌 Credits
+This project is built and maintained with contributions from the open-source community.
+Special thanks to GSSoC 2025 for supporting open collaboration.
