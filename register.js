@@ -1,84 +1,90 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
+  const pwInput = document.getElementById('password');
+  const pwToggle = document.getElementById('pwToggle');
+
+  pwToggle.addEventListener('click', () => {
+    pwInput.type = pwInput.type === 'password' ? 'text' : 'password';
+    pwToggle.textContent = pwInput.type === 'password' ? '👁️' : '🙈';
+  });
+
+  const pwStrength = document.getElementById('pwStrength');
+  const strengthBar = document.getElementById('strengthBar');
+
+  pwInput.addEventListener('input', () => {
+    const v = pwInput.value;
+    let s = 0;
+    if(v.length >= 8) s++;
+    if(/[A-Z]/.test(v)) s++;
+    if(/[0-9]/.test(v)) s++;
+    if(/[^A-Za-z0-9]/.test(v)) s++;
+    const widths = ['10%','32%','67%','100%'];
+    const colors = ['#fc256b','#e58223','#e8d300','#09d681'];
+    pwStrength.style.width = widths[s] || '0';
+    pwStrength.style.background = colors[s] || '#232332';
+    strengthBar.style.display = v.length > 0 ? 'block' : 'none';
+  });
+
   const form = document.getElementById("registerForm");
   const username = document.getElementById("username");
   const email = document.getElementById("email");
-  const password = document.getElementById("password");
   const confirmPassword = document.getElementById("confirmPassword");
-  const strengthBar = document.getElementById("strengthBar");
-  const togglePassword = document.getElementById("togglePassword");
-  const formFeedback = document.getElementById("formFeedback");
 
-  const showError = (input, message) => {
-    document.getElementById(input.id + "Help").textContent = message;
-  };
+  function showError(id, msg) {
+    document.getElementById(id).textContent = msg;
+  }
 
-  const clearErrors = () => {
-    ["usernameHelp", "emailHelp", "passwordHelp", "confirmHelp"].forEach(id => {
-      document.getElementById(id).textContent = "";
-    });
-  };
+  function clearErrors() {
+    ["usernameHelp","emailHelp","passwordHelp","confirmHelp"].forEach(id=>showError(id,""));
+  }
 
-  const checkPasswordStrength = (pwd) => {
-    let strength = 0;
-    if (pwd.length >= 8) strength++;
-    if (/[A-Z]/.test(pwd)) strength++;
-    if (/[0-9]/.test(pwd)) strength++;
-    if (/[^A-Za-z0-9]/.test(pwd)) strength++;
+  [username, email, pwInput, confirmPassword].forEach(input =>
+    input.addEventListener("input", clearErrors)
+  );
 
-    const width = (strength / 4) * 100;
-    strengthBar.style.width = width + "%";
-
-    if (strength <= 1) {
-      strengthBar.style.backgroundColor = "#ff4c4c"; // weak
-    } else if (strength === 2) {
-      strengthBar.style.backgroundColor = "#ffcc00"; // medium
-    } else {
-      strengthBar.style.backgroundColor = "#00d084"; // strong
-    }
-  };
-
-  password.addEventListener("input", () => {
-    checkPasswordStrength(password.value);
-  });
-
-  togglePassword.addEventListener("change", () => {
-    const type = togglePassword.checked ? "text" : "password";
-    password.type = confirmPassword.type = type;
-  });
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault(); // prevent default submit
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
     clearErrors();
     let valid = true;
 
-    if (username.value.trim() === "") {
-      showError(username, "Username is required");
+    if(!username.value.trim()) {
+      showError("usernameHelp", "Username required.");
       valid = false;
     }
 
-    if (email.value.trim() === "") {
-      showError(email, "Email is required");
+    if(!/^\S+@\S+\.\S+$/.test(email.value)) {
+      showError("emailHelp", "Valid email required.");
       valid = false;
     }
 
-    if (password.value.length < 6) {
-      showError(password, "Password must be at least 6 characters");
+    if(pwInput.value.length < 8 || pwInput.value.length > 20) {
+      showError("passwordHelp", "Password: 8–20 chars.");
       valid = false;
     }
 
-    if (confirmPassword.value !== password.value) {
-      showError(confirmPassword, "Passwords do not match");
+    if(pwInput.value !== confirmPassword.value) {
+      showError("confirmHelp", "Passwords do not match.");
       valid = false;
     }
 
-    if (valid) {
-      formFeedback.textContent = "Registration Successful!";
-      formFeedback.style.color = "#00d084";
+    if(valid) {
       form.reset();
-      strengthBar.style.width = "0";
-    } else {
-      formFeedback.textContent = "Please fix the errors above.";
-      formFeedback.style.color = "#ff4c4c";
+      pwStrength.style.width = '0';
+      showError("confirmHelp", "✅ Registration successful!");
+      strengthBar.style.display = 'none';
     }
+  });
+
+  document.getElementById('submitBtn').addEventListener('click', function(e){
+    const btn = this;
+    const ripple = document.createElement('span');
+    ripple.className = 'ripple';
+    let rect = btn.getBoundingClientRect();
+    ripple.style.left = (e.clientX - rect.left) + 'px';
+    ripple.style.top = (e.clientY - rect.top) + 'px';
+    ripple.style.width = ripple.style.height = Math.max(rect.width, rect.height) * 1.18 + 'px';
+    btn.appendChild(ripple);
+    setTimeout(() => {
+      if(ripple.parentNode) ripple.remove();
+    }, 400);
   });
 });
