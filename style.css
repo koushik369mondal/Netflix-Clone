@@ -200,14 +200,41 @@ section.first>div :nth-child(2) {
 .faqbox {
     transition: all 1s ease-out;
     font-size: 24px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     background-color: #2d2d2d;
     padding: 24px;
     max-width: 60vw;
     margin: 34px auto;
     cursor: pointer;
 }
+
+.faq-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.faqbox.open .answer {
+  max-height: 500px; /* Enough to show full answer */
+}
+
+.faqbox .icon {
+  transition: transform 0.3s ease;
+}
+
+.faqbox.open .icon {
+  transform: rotate(45deg);
+}
+
 
 footer {
     color: white;
