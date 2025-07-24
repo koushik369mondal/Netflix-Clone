@@ -309,7 +309,7 @@ We're grateful to all our amazing contributors who have helped make this project
 | Avatar | Name | Role | Contributions |
 |--------|------|------|---------------|
 | <img src="https://github.com/dhruvjohri.png" width="50" height="50" style="border-radius: 50%;"> | **Dhruv Johri** | 👑 **Project Creator** | Initial project setup, Core development |
-| <img src="https://github.com/Ardhaya-Johari.png" width="50" height="50" style="border-radius: 50%;"> | **Ardhaya Johari** | ✨ **Contributor** | README improvements, Footer enhancements |
+| 🎯 |**Your Name Here**|  🌱**New Contributor** | *Contribute and see your name here!* |
 | 🎯 | **Your Name Here** | 🌱 **New Contributor** | *Contribute and see your name here!* |
 
 <div align="center">
