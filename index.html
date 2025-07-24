@@ -4,8 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone </title>
+    <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hero form styles */
+        .hero-buttons {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+        .hero-buttons input[type="email"] {
+            flex: 2;
+            min-width: 200px;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .hero-buttons .btn-red {
+            flex: 1;
+            min-width: 150px;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        @media (max-width: 600px) {
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-buttons input[type="email"],
+            .hero-buttons .btn-red {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -31,9 +72,12 @@
         <li><a href="#">New & Popular</a></li>
         <li><a href="#">My List</a></li>
       </ul>
+      <!-- Navigation Buttons -->
       <div class="nav-buttons">
+        <!-- Language Selector Button -->
         <button class="btn">English</button>
-        <button class="btn btn-red-sm">Sign In</button>
+        <!-- Sign In Button - Links to registration page -->
+        <a href="register.html" class="btn btn-red-sm">Sign In</a>
       </div>
     </nav>
 
@@ -43,10 +87,13 @@
             <span>Unlimited movies, TV shows and more</span>
             <span>Starts at ₹149. Cancel at any time.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>
-            <div class="hero-buttons">
-                <input type="text" placeholder="Email address">
-                <button class="btn btn-red">Get Started &gt;</button>
-            </div>
+            <!-- Get Started Form - Submits to register.html with email parameter -->
+            <form action="register.html" method="GET" class="hero-buttons">
+                <!-- Email input - will be passed as URL parameter to register.html -->
+                <input type="email" name="email" id="heroEmail" placeholder="Email address" required>
+                <!-- Submit button - triggers form submission to register.html -->
+                <button type="submit" class="btn btn-red">Get Started &gt;</button>
+            </form>
         </div>
 
         <div class="separation"></div>
@@ -189,6 +236,6 @@
             </div>
         </div>
     </footer>
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>
