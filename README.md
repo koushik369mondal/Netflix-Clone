@@ -24,8 +24,7 @@
 
 ### 📣 **Connect with Me**
 
-[![Twitter Follow](https://img.shields.io/badge/Follow_@dhruvjohri-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/dhruvjohri)
-
+[![Twitter Follow](https://img.shields.io/badge/Follow_@dhruvjohri-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/DhruvJohri_)
 [![GitHub](https://img.shields.io/badge/Follow_GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dhruvjohri)
 
 </div>
