@@ -24,7 +24,7 @@
 
 ### 📣 **Connect with Me**
 
-[![Twitter Follow](https://img.shields.io/badge/Follow_@dhruvjohri-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/DhruvJohri_)
+[![Twitter Follow](https://img.shields.io/badge/Follow_@dhruvjohri-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/DhruvJohri)
 [![GitHub](https://img.shields.io/badge/Follow_GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dhruvjohri)
 
 </div>
@@ -308,9 +308,9 @@ We're grateful to all our amazing contributors who have helped make this project
 
 | Avatar | Name | Role | Contributions |
 |--------|------|------|---------------|
-| <img src="https://github.com/dhruvjohri.png" width="50" height="50" style="border-radius: 50%;"> | **Dhruv Johri** | 👑 **Project Creator** | Initial project setup, Core development |
-| 🎯 |**Your Name Here**|  🌱**New Contributor** | *Contribute and see your name here!* |
-| 🎯 | **Your Name Here** | 🌱 **New Contributor** | *Contribute and see your name here!* |
+| <img src="https://github.com/dhruvjohri.png" width="50" height="50" style="border-radius: 50%;"> | [**DHRUV JOHRI**](https://github.com/DhruvJohri) | 👑 **Project Creator** | Initial project setup, Core development |
+| <img src="https://github.com/koushik369mondal.png" width="50" height="50" style="border-radius: 50%;"> | [**Kaushik Mandal**](https://github.com/koushik369mondal) | 📝 **Contributor** | Improved `README.md` layout and added desktop preview |
+| 🎯 |**Your Name Here**| 🌱 **New Contributor** | *Contribute and see your name here!* |
 
 <div align="center">
 
@@ -319,6 +319,7 @@ We're grateful to all our amazing contributors who have helped make this project
 **💡 Want to see your avatar here? [Contribute now!](#-how-to-contribute)**
 
 </div>
+
 
 ---
 
