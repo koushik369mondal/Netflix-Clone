@@ -18,7 +18,8 @@
 <div align="center">
 
 ### ⭐ **Star this Repository** ⭐
-*Help us reach more developers by starring this repo!*
+
+_Help us reach more developers by starring this repo!_
 
 [![Star Repository](https://img.shields.io/badge/⭐_Star_this_repo-black?style=for-the-badge&logo=github)](https://github.com/dhruvjohri/netflix-clone)
 
@@ -59,6 +60,7 @@
 </div>
 
 This project is a **beginner-friendly frontend challenge** that focuses on:
+
 - 🎨 **Clean UI/UX Design** - Mimicking Netflix's modern interface
 - 📱 **Responsive Layout** - Works seamlessly across all devices
 - 🚀 **Performance Optimized** - Fast loading and smooth interactions
@@ -72,14 +74,14 @@ Originally created by **[Dhruv Johri](https://github.com/dhruvjohri)** and now e
 
 <div align="center">
 
-| Feature | Description | Status |
-|---------|-------------|--------|
-| 🎬 **Hero Section** | Eye-catching banner with Netflix branding | ✅ Complete |
-| 📱 **Responsive Design** | Mobile-first approach with breakpoints | ✅ Complete |
-| 🎭 **Movie Carousel** | Interactive movie/show browsing | 🚧 In Progress |
-| 🔍 **Search Functionality** | Search movies and shows | 📋 Planned |
-| 👤 **User Profiles** | Multiple user profile support | 📋 Planned |
-| 🌙 **Dark Mode** | Toggle between light and dark themes | 📋 Planned |
+| Feature                     | Description                               | Status         |
+| --------------------------- | ----------------------------------------- | -------------- |
+| 🎬 **Hero Section**         | Eye-catching banner with Netflix branding | ✅ Complete    |
+| 📱 **Responsive Design**    | Mobile-first approach with breakpoints    | ✅ Complete    |
+| 🎭 **Movie Carousel**       | Interactive movie/show browsing           | 🚧 In Progress |
+| 🔍 **Search Functionality** | Search movies and shows                   | 📋 Planned     |
+| 👤 **User Profiles**        | Multiple user profile support             | 📋 Planned     |
+| 🌙 **Dark Mode**            | Toggle between light and dark themes      | 📋 Planned     |
 
 </div>
 
@@ -90,12 +92,14 @@ Originally created by **[Dhruv Johri](https://github.com/dhruvjohri)** and now e
 <div align="center">
 
 ### 🖥️ **Desktop View**
+
 <!-- ![Netflix Clone Desktop](https://drive.google.com/file/d/13mgoQ7yz5Ssv09mntvTAOXogKn81K0Cx/view?usp=drive_link) -->
 
 ![Preview](./assets/images/netflix-preview.png)
 
 ### 📱 **Mobile Responsive** (Coming Soon)
-*Screenshots will be added as mobile responsiveness is enhanced*
+
+_Screenshots will be added as mobile responsiveness is enhanced_
 
 </div>
 
@@ -105,13 +109,13 @@ Originally created by **[Dhruv Johri](https://github.com/dhruvjohri)** and now e
 
 <div align="center">
 
-| Technology | Usage | Badge |
-|------------|-------|-------|
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | Structure & Semantics | Core |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Styling & Layout | Core |
-| ![Flexbox](https://img.shields.io/badge/Flexbox-FF6B35?style=for-the-badge&logo=css3&logoColor=white) | Flexible Layouts | Layout |
-| ![Grid](https://img.shields.io/badge/CSS_Grid-FF6B35?style=for-the-badge&logo=css3&logoColor=white) | Grid Layouts | Layout |
-| ![Responsive](https://img.shields.io/badge/Responsive-4CAF50?style=for-the-badge&logo=css3&logoColor=white) | Media Queries | Design |
+| Technology                                                                                                  | Usage                 | Badge  |
+| ----------------------------------------------------------------------------------------------------------- | --------------------- | ------ |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)          | Structure & Semantics | Core   |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)             | Styling & Layout      | Core   |
+| ![Flexbox](https://img.shields.io/badge/Flexbox-FF6B35?style=for-the-badge&logo=css3&logoColor=white)       | Flexible Layouts      | Layout |
+| ![Grid](https://img.shields.io/badge/CSS_Grid-FF6B35?style=for-the-badge&logo=css3&logoColor=white)         | Grid Layouts          | Layout |
+| ![Responsive](https://img.shields.io/badge/Responsive-4CAF50?style=for-the-badge&logo=css3&logoColor=white) | Media Queries         | Design |
 
 </div>
 
@@ -218,17 +222,20 @@ netflix-clone/
 ### 🎯 **How to Get Started**
 
 1. **🍴 Fork the Repository**
+
    ```bash
    # Click the "Fork" button at the top right of this page
    ```
 
 2. **📥 Clone Your Fork**
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/netflix-clone.git
    cd netflix-clone
    ```
 
 3. **🌿 Create a New Branch**
+
    ```bash
    git checkout -b feature/your-feature-name
    # or
@@ -236,17 +243,20 @@ netflix-clone/
    ```
 
 4. **⚡ Make Your Changes**
+
    - Write clean, readable code
    - Follow existing code style
    - Test your changes thoroughly
 
 5. **💾 Commit Your Changes**
+
    ```bash
    git add .
    git commit -m "✨ Add: Your descriptive commit message"
    ```
 
 6. **🚀 Push to Your Fork**
+
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -262,24 +272,28 @@ netflix-clone/
 ## 🌟 **How to Contribute**
 
 ### 🎨 **Frontend Improvements**
+
 - [ ] **Mobile Responsiveness** - Enhance mobile experience
 - [ ] **Accessibility** - Add ARIA labels and keyboard navigation
 - [ ] **Performance** - Optimize images and CSS
 - [ ] **Animations** - Add smooth transitions and hover effects
 
 ### 🔧 **Feature Additions**
+
 - [ ] **Search Functionality** - Implement movie/show search
 - [ ] **Movie Details** - Create detailed movie pages
 - [ ] **User Profiles** - Add multiple profile support
 - [ ] **Watchlist** - Implement favorites/watchlist feature
 
 ### 📚 **Documentation**
+
 - [ ] **Code Comments** - Add detailed code documentation
 - [ ] **Setup Guides** - Create deployment guides
 - [ ] **API Documentation** - Document any future APIs
 - [ ] **Tutorial Videos** - Create learning resources
 
 ### 🐛 **Bug Fixes**
+
 - [ ] **Cross-browser Issues** - Fix compatibility problems
 - [ ] **Layout Issues** - Resolve responsive design bugs
 - [ ] **Performance Issues** - Fix loading and rendering problems
@@ -306,11 +320,11 @@ We're grateful to all our amazing contributors who have helped make this project
 
 </div>
 
-| Avatar | Name | Role | Contributions |
-|--------|------|------|---------------|
-| <img src="https://github.com/dhruvjohri.png" width="50" height="50" style="border-radius: 50%;"> | [**DHRUV JOHRI**](https://github.com/DhruvJohri) | 👑 **Project Creator** | Initial project setup, Core development |
-| <img src="https://github.com/koushik369mondal.png" width="50" height="50" style="border-radius: 50%;"> | [**Kaushik Mandal**](https://github.com/koushik369mondal) | 📝 **Contributor** | Improved `README.md` layout and added desktop preview |
-| 🎯 |**Your Name Here**| 🌱 **New Contributor** | *Contribute and see your name here!* |
+| Avatar                                                                                                 | Name                                                      | Role                   | Contributions                                         |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- | ---------------------- | ----------------------------------------------------- |
+| <img src="https://github.com/dhruvjohri.png" width="50" height="50" style="border-radius: 50%;">       | [**DHRUV JOHRI**](https://github.com/DhruvJohri)          | 👑 **Project Creator** | Initial project setup, Core development               |
+| <img src="https://github.com/koushik369mondal.png" width="50" height="50" style="border-radius: 50%;"> | [**Kaushik Mandal**](https://github.com/koushik369mondal) | 📝 **Contributor**     | Improved `README.md` layout and added desktop preview |
+| 🎯                                                                                                     | **Your Name Here**                                        | 🌱 **New Contributor** | _Contribute and see your name here!_                  |
 
 <div align="center">
 
@@ -320,7 +334,6 @@ We're grateful to all our amazing contributors who have helped make this project
 
 </div>
 
-
 ---
 
 ## 🏆 **GSSoC 2025 Guidelines**
@@ -328,6 +341,7 @@ We're grateful to all our amazing contributors who have helped make this project
 ### 📋 **For Participants**
 
 #### ✅ **Do's**
+
 - ✅ **Read documentation** thoroughly before contributing
 - ✅ **Follow code style** and project structure
 - ✅ **Write descriptive** commit messages
@@ -336,6 +350,7 @@ We're grateful to all our amazing contributors who have helped make this project
 - ✅ **Ask questions** if you're unsure about anything
 
 #### ❌ **Don'ts**
+
 - ❌ **Don't spam** with multiple PRs for same issue
 - ❌ **Don't copy code** without understanding
 - ❌ **Don't make unnecessary** changes
@@ -344,11 +359,11 @@ We're grateful to all our amazing contributors who have helped make this project
 
 ### 🎯 **Contribution Levels**
 
-| Level | Description | Points | Badge |
-|-------|-------------|--------|-------|
-| 🥉 **Beginner** | Fix typos, update docs, minor bug fixes | 5-10 | ![Beginner](https://img.shields.io/badge/Level-Beginner-green) |
-| 🥈 **Intermediate** | Add features, improve UI/UX, performance | 15-25 | ![Intermediate](https://img.shields.io/badge/Level-Intermediate-blue) |
-| 🥇 **Advanced** | Major features, architecture improvements | 30-50 | ![Advanced](https://img.shields.io/badge/Level-Advanced-red) |
+| Level               | Description                               | Points | Badge                                                                 |
+| ------------------- | ----------------------------------------- | ------ | --------------------------------------------------------------------- |
+| 🥉 **Beginner**     | Fix typos, update docs, minor bug fixes   | 5-10   | ![Beginner](https://img.shields.io/badge/Level-Beginner-green)        |
+| 🥈 **Intermediate** | Add features, improve UI/UX, performance  | 15-25  | ![Intermediate](https://img.shields.io/badge/Level-Intermediate-blue) |
+| 🥇 **Advanced**     | Major features, architecture improvements | 30-50  | ![Advanced](https://img.shields.io/badge/Level-Advanced-red)          |
 
 ---
 
@@ -373,6 +388,7 @@ copies or substantial portions of the Software.
 ```
 
 ### ⚖️ **Important Notice**
+
 - **Netflix®** branding, logos, and visuals are owned by **Netflix, Inc.**
 - This project is for **educational purposes only**
 - Not affiliated with or endorsed by Netflix, Inc.

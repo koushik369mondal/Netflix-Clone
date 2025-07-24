@@ -49,44 +49,45 @@ nav button {
     position: relative;
     z-index: 10;
 }
-*/ 
+*/
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .navbar .logo img {
-  width: 130px;
+    width: 130px;
 }
 
 .nav-links {
-  display: flex;
-  gap: 30px;
-  list-style: none;
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #e50914;
-  text-shadow: 0 0 10px red;
+    color: #e50914;
+    text-shadow: 0 0 10px red;
 }
 
 .nav-buttons {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
+
 .hero {
     font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 100px);
@@ -100,19 +101,19 @@ nav button {
     padding: 0 30px;
 }
 
-.hero > :nth-child(1) {
+.hero> :nth-child(1) {
     font-size: 48px;
     font-weight: 900;
     text-align: center;
 }
 
-.hero > :nth-child(2) {
+.hero> :nth-child(2) {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
 }
 
-.hero > :nth-child(3) {
+.hero> :nth-child(3) {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
@@ -246,30 +247,31 @@ section.first>div :nth-child(2) {
     cursor: pointer;
 }
 
-.faq-header{
+.faq-header {
     display: flex;
     justify-content: space-between;
 }
 
 .answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
 }
 
 .faqbox.open .answer {
-  max-height: 500px; /* Enough to show full answer */
+    max-height: 500px;
+    /* Enough to show full answer */
 }
 
 .faqbox .icon {
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .faqbox.open .icon {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 
@@ -295,7 +297,7 @@ footer .questions {
 
 @media screen and (max-width: 1300px) {
 
-    nav{
+    nav {
         max-width: 90vw;
     }
 
@@ -341,10 +343,10 @@ footer .questions {
         padding: 75px 0;
     }
 
-    .footer-item{
+    .footer-item {
         align-items: center;
     }
- 
+
 
 }
 
@@ -375,24 +377,24 @@ footer .questions {
 .btn,
 .btn-red,
 .btn-red-sm {
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover,
 .btn-red:hover,
 .btn-red-sm:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-  background-color: #c11119;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    background-color: #c11119;
 }
 
 .footer a {
-  transition: all 0.3s ease;
-  color: #999;
-  text-decoration: none;
+    transition: all 0.3s ease;
+    color: #999;
+    text-decoration: none;
 }
 
 .footer a:hover {
-  color: white;
-  text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
