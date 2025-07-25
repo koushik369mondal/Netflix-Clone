@@ -396,3 +396,24 @@ footer .questions {
   color: white;
   text-decoration: underline;
 }
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  transform: translateY(-5px);
+}
+
+.up-arrow-icon {
+  width: 60px;
+  height: 60px;
+}
+
+
