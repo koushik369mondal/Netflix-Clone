@@ -7,36 +7,36 @@
 }
 
 body {
-    padding-top: 80px;
     background-color: black;
-}
+} 
 
 .main {
-    background-image: url("assets/bg.jpg");
+    background-image: url("assets/hero-image.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: max(1200px,100vw);
     background-repeat: no-repeat;
-    height: 644px;
+    height: 90vh;
+    width:100%;
     position: relative;
 }
 
 .main .box {
-    height: 644px;
+    height:100vh;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.65;
     position: absolute;
     top: 0;
     background-color: black;
 }
 
-
-/*nav {
+/*  
+ nav { 
     max-width: 60vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 100px;}
 
 nav img {
     color: red;
@@ -49,7 +49,8 @@ nav button {
     position: relative;
     z-index: 10;
 }
-*/ 
+    */
+
 .navbar {
   position: fixed;
   top:0;
@@ -94,7 +95,7 @@ nav button {
 .hero {
     margin-top: 80px;
     font-family: 'Martel Sans', sans-serif;
-    height: calc(100% - 100px);
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,19 +106,22 @@ nav button {
     padding: 0 30px;
 }
 
-.hero > :nth-child(1) {
-    font-size: 48px;
-    font-weight: 900;
+.hero > :nth-child(1),
+.hero > :nth-child(2)  {
+    margin-top:95px;
+    font-size: 60px;
+    font-weight: 1000;
     text-align: center;
-}
+} 
 
-.hero > :nth-child(2) {
+.hero > :nth-child(3) {
+    margin-top:-20px;
     font-size: 20px;
     font-weight: 400;
     text-align: center;
 }
 
-.hero > :nth-child(3) {
+.hero > :nth-child(4) {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
@@ -321,7 +325,7 @@ footer .questions {
     }
 
     .hero> :nth-child(2) {
-        font-size: 18px;
+        font-size: 29px;
     }
 
     .hero> :nth-child(3) {
