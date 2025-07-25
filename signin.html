@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix Register</title>
+    <title>Netflix Sign In</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -16,11 +16,11 @@
         font-family: "Roboto", sans-serif;
       }
 
-      html,
-      body {
+      html, body {
         height: 100%;
         width: 100%;
       }
+
       body {
         display: flex;
         justify-content: center;
@@ -58,7 +58,6 @@
 
       .container h2 {
         text-align: center;
-        color: #fff;
         margin-bottom: 30px;
         font-size: 26px;
         letter-spacing: 1px;
@@ -101,21 +100,6 @@
         cursor: pointer;
       }
 
-      #strengthBar {
-        margin-top: 8px;
-        height: 6px;
-        background: #444;
-        border-radius: 4px;
-        overflow: hidden;
-      }
-
-      #pwStrength {
-        height: 100%;
-        width: 0%;
-        background: limegreen;
-        transition: 0.4s ease;
-      }
-
       .submit-btn {
         width: 100%;
         padding: 14px;
@@ -149,6 +133,7 @@
         font-size: 13px;
         margin-top: 4px;
       }
+
       @media (max-width: 480px) {
         .container {
           padding: 30px 20px;
@@ -158,14 +143,8 @@
   </head>
   <body>
     <div class="container">
-      <h2>Create Your Account</h2>
-      <form id="registerForm">
-        <div class="input-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
-          <div class="help-text" id="usernameHelp"></div>
-        </div>
-
+      <h2>Sign In</h2>
+      <form id="signinForm">
         <div class="input-group">
           <label for="email">Email address</label>
           <input type="email" id="email" name="email" required />
@@ -175,33 +154,20 @@
         <div class="input-group" style="position: relative">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required />
-          <span class="toggle-password" id="pwToggle">👁️</span>
-          <div id="strengthBar"><div id="pwStrength"></div></div>
+          <span class="toggle-password" id="pwToggle">Show</span>
           <div class="help-text" id="passwordHelp"></div>
         </div>
 
-        <div class="input-group">
-          <label for="confirmPassword">Confirm Password</label>
-          <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            required
-          />
-          <div class="help-text" id="confirmHelp"></div>
-        </div>
-
         <button type="submit" class="submit-btn" id="submitBtn">
-          Register
+          Sign In
         </button>
       </form>
 
       <div class="bottom-text">
-          Already have an account? <a href="signin.html">Sign In</a>
+        Don't have an account? <a href="register.html">Register</a>
       </div>
-
     </div>
 
-    <script src="register.js"></script>
+    <script src="signin.js"></script>
   </body>
 </html>
