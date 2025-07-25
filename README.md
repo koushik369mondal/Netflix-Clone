@@ -150,26 +150,6 @@ code .  # For VS Code users
 3. Extract the downloaded file
 4. Open `index.html` in your browser
 
-#### **Method 3: GitHub Codespaces**
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dhruvjohri/netflix-clone)
-
-### 🌐 **Running the Project**
-
-```bash
-# Simply open the index.html file in your browser
-# Or use a local server (recommended)
-
-# Using Python (if installed)
-python -m http.server 8000
-
-# Using Node.js (if live-server is installed)
-npx live-server
-
-# Using PHP (if installed)
-php -S localhost:8000
-```
-
 ---
 
 ## 📁 **Project Structure**
