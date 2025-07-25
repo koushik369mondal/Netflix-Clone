@@ -59,7 +59,7 @@ body:
           required: true
         - label: I have starred the repository.
           required: true
-        - label: I agree to follow the project's [Code of Conduct](./CODE_OF_CONDUCT.md).
+        - label: I agree to follow the project's [Code of Conduct](../CODE_OF_CONDUCT.md).
           required: true
         - label: I follow [@DhruvJohri_ on X](https://x.com/DhruvJohri_) for updates and announcements.
           required: true
