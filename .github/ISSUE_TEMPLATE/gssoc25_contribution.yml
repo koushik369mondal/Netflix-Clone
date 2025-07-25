@@ -1,5 +1,5 @@
 name: 💡 GSSoC '25 Contribution
-description: Submit your issue, feature request, or proposal as part of GSSoC '25
+description: Share your idea, issue, or proposal for GSSoC 2025!
 title: "[GSSoC25] <title>"
 labels: ["gssoc", "good first issue"]
 
@@ -7,73 +7,72 @@ body:
   - type: markdown
     attributes:
       value: |
-        👋 **Hello, and welcome GSSoC '25 Contributor!**
+        # 🌟 GSSoC '25 Contribution Form
 
-        We're excited to have you contributing to this project as part of GSSoC 2025.  
-        Please take a moment to fill out this form properly so we can review your contribution efficiently.
+        Hey there! 👋  
+        We're thrilled to have you as part of **GirlScript Summer of Code 2025**.  
+        Please fill out this form so we can understand your idea or issue clearly.
 
-  - type: input
-    id: github-username
-    attributes:
-      label: GitHub Username
-      description: Please enter your GitHub handle (e.g., @yourusername)
-      placeholder: "@yourusername"
-    validations:
-      required: true
+        > ✨ _Let’s make this project better together!_
 
   - type: input
     id: summary
     attributes:
-      label: 📌 Issue Title / Suggestion Summary
-      description: A short, descriptive title of your issue or idea
-      placeholder: Add MIT License file to the repository
+      label: 📝 Title / Summary
+      description: What are you proposing or reporting?
+      placeholder: e.g., Add MIT License to the repository
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: 📝 Detailed Description
-      description: Describe the issue, bug, or feature you are proposing to work on.
+      label: 🔍 What's the idea or issue?
+      description: Tell us clearly what you're proposing or reporting.
       placeholder: |
-        - What is the current behavior?
-        - What change are you proposing?
-        - Why is this needed?
+        - What's currently happening?
+        - What change or feature are you suggesting?
+        - Why is it important?
     validations:
       required: true
 
   - type: textarea
     id: solution
     attributes:
-      label: 🛠️ Proposed Solution / Steps to Reproduce
-      description: How do you plan to solve the issue or implement the idea?
+      label: ⚙️ How will you solve it?
+      description: Share your plan, steps, or implementation approach.
       placeholder: |
-        1. Fork the repo
-        2. Create LICENSE file using MIT License
-        3. Push changes and create PR
+        1. Fork the repository
+        2. Make the necessary changes
+        3. Push and create a Pull Request
     validations:
       required: true
 
   - type: checkboxes
     id: checklist
     attributes:
-      label: ✅ Contributor Checklist
+      label: ✅ GSSoC '25 Checklist
       options:
-        - label: I have searched and confirmed this issue has not been reported already.
+        - label: I have searched and confirmed this issue is not already open.
           required: true
         - label: I am a registered participant of GSSoC 2025.
           required: true
-        - label: I have starred the repository to support the project.
-          required: false
+        - label: I have starred the repository.
+          required: true
         - label: I agree to follow the project's [Code of Conduct](../CODE_OF_CONDUCT.md).
+          required: true
+        - label: I follow [@DhruvJohri_ on X](https://x.com/DhruvJohri_) for updates and announcements.
           required: true
 
   - type: markdown
     attributes:
       value: |
-        📚 **Next Steps**:
-        - Wait for a maintainer to assign the issue to you.
-        - Once assigned, start working and submit a Pull Request.
-        - Stay active and feel free to ask questions!
+        ---
 
-        ⭐ _Thank you for contributing! Let's build something amazing together._
+        ## 🚀 Next Steps
+
+        - ⏳ Wait for a maintainer to assign the issue to you  
+        - ✅ Start working once assigned  
+        - 💬 Ask questions anytime — we’re here to help!
+
+        > 🙌 **Thank you for contributing to Open Source with GSSoC '25!**
