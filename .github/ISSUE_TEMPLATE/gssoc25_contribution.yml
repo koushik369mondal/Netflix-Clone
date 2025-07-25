@@ -1,7 +1,7 @@
 name: 💡 GSSoC '25 Contribution
 description: Share your idea, issue, or proposal for GSSoC 2025!
 title: "[GSSoC25] <title>"
-labels: ["gssoc", "good first issue"]
+# labels: ["gssoc", "good first issue"]
 
 body:
   - type: markdown
