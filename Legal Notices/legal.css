@@ -1,0 +1,218 @@
+/* Base styles */
+:root {
+  --primary-color: #e50914;
+  --light-bg: #fff;
+  --dark-bg: #141414;
+  --text-light: #e5e5e5;
+  --text-dark: #111;
+  --transition: 0.3s ease;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+/* Header styles */
+.header {
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Navigation buttons */
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1.1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color var(--transition);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #b20710;
+}
+
+.btn.active {
+  background-color: #b20710;
+}
+
+/* Print button */
+.print-btn {
+  background-color: var(--primary-color, #e50914);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.print-btn:hover {
+  background-color: #b20710;
+}
+
+/* Toggle dark mode button */
+.toggle-dark {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-dark::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* When dark mode is active */
+body.dark-mode .toggle-dark {
+  background-color: var(--primary-color);
+}
+
+body.dark-mode .toggle-dark::before {
+  transform: translateX(24px);
+}
+
+/* Section content */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll to top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+body.dark-mode a {
+  color: var(--primary-color);
+}
+
+body.dark-mode .header,
+body.dark-mode footer {
+  background-color: #000;
+}
+
+body.dark-mode .btn,
+body.dark-mode .toggle-dark {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #b20710;
+}
+
+body.dark-mode .print-btn {
+  background-color: var(--primary-color);
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .btn, .print-btn, .toggle-dark {
+    width: 100%;
+    text-align: center;
+  }
+}
