@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isValid) {
       // Simulate login success
       alert("Sign in successful!");
-      window.location.href = "index.html";
+window.location.href = "profiLe-selection.html"; // Redirect to profile selection
       form.reset();
     }
   });
