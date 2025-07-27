@@ -12,8 +12,11 @@
 </div>
 
 ---
-
+<div align="centre">
+   
 ## 🌟 **Show Your Support!**
+
+</div>
 
 <div align="center">
 
@@ -153,26 +156,6 @@ code .  # For VS Code users
 2. Select **"Download ZIP"**
 3. Extract the downloaded file
 4. Open `index.html` in your browser
-
-#### **Method 3: GitHub Codespaces**
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dhruvjohri/netflix-clone)
-
-### 🌐 **Running the Project**
-
-```bash
-# Simply open the index.html file in your browser
-# Or use a local server (recommended)
-
-# Using Python (if installed)
-python -m http.server 8000
-
-# Using Node.js (if live-server is installed)
-npx live-server
-
-# Using PHP (if installed)
-php -S localhost:8000
-```
 
 ---
 
@@ -370,22 +353,6 @@ We're grateful to all our amazing contributors who have helped make this project
 ## 📄 **License**
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 Dhruv Johri
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
 
 ### ⚖️ **Important Notice**
 

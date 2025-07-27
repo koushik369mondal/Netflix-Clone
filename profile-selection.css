@@ -1,0 +1,438 @@
+/* Profile Selection Page - Professional Styles */
+:root {
+  --netflix-red: #e50914;
+  --netflix-dark-red: #b20710;
+  --netflix-black: #000000;
+  --netflix-dark-gray: #141414;
+  --netflix-medium-gray: #2f2f2f;
+  --netflix-light-gray: #b3b3b3;
+  --netflix-white: #ffffff;
+  --transition-speed: 0.3s;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--netflix-dark-gray);
+  color: var(--netflix-white);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Profile Selection Container */
+.profile-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Netflix Logo */
+.profile-logo {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 10;
+}
+
+.netflix-logo {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Profile Content */
+.profile-content {
+  max-width: 1000px;
+  width: 100%;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-content h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  margin-bottom: 60px;
+  color: var(--netflix-white);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -1px;
+}
+
+/* Profile Grid */
+.profile-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+/* Profile Card */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  gap: 15px;
+  position: relative;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.profile-card:hover:not(.selecting) {
+  transform: translateY(-5px);
+}
+
+.profile-card:hover:not(.selecting) .profile-name {
+  color: var(--netflix-white);
+}
+
+/* Profile Avatar */
+.profile-avatar {
+  width: 134px;
+  height: 134px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid transparent;
+  transition: all var(--transition-speed) ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card:hover:not(.selecting) .profile-avatar {
+  border-color: var(--netflix-white);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Avatar Face */
+.avatar-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.eyes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.eye {
+  width: 8px;
+  height: 8px;
+  background-color: var(--netflix-white);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.smile {
+  width: 30px;
+  height: 15px;
+  border: 3px solid var(--netflix-white);
+  border-top: none;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Profile Colors */
+.profile-blue {
+  background: linear-gradient(135deg, #0073e6 0%, #005bb5 100%);
+}
+
+.profile-yellow {
+  background: linear-gradient(135deg, #ffb000 0%, #ff8c00 100%);
+}
+
+.profile-red {
+  background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+}
+
+.profile-teal {
+  background: linear-gradient(135deg, #00a8cc 0%, #007a99 100%);
+}
+
+.profile-children {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+}
+
+/* Children Profile Special Styling */
+.children-label {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fbbf24;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* Profile Name */
+.profile-name {
+  font-size: 1.3rem;
+  color: var(--netflix-light-gray);
+  font-weight: 400;
+  transition: all var(--transition-speed) ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Loading States */
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid var(--netflix-white);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  display: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--netflix-white);
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* Selecting State */
+.profile-card.selecting .profile-name {
+  opacity: 0;
+}
+
+.profile-card.selecting .loading-text {
+  display: block;
+}
+
+.profile-card.selecting .loading-spinner {
+  display: block;
+}
+
+.profile-card.selecting .avatar-face {
+  opacity: 0.3;
+}
+
+.profile-card.selecting .profile-avatar {
+  border-color: var(--netflix-red);
+  box-shadow: 0 0 30px rgba(229, 9, 20, 0.6);
+  transform: scale(1.05);
+}
+
+.profile-card.selecting:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Manage Profiles Button */
+.manage-profiles-btn {
+  background: transparent;
+  border: 1px solid var(--netflix-light-gray);
+  color: var(--netflix-light-gray);
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-speed) ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.manage-profiles-btn:hover {
+  color: var(--netflix-white);
+  border-color: var(--netflix-white);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.manage-profiles-btn i {
+  font-size: 0.9rem;
+}
+
+/* Success State Animation */
+@keyframes profileSelected {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.profile-card.selected .profile-avatar {
+  animation: profileSelected 0.6s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-logo {
+    left: 20px;
+    top: 20px;
+  }
+
+  .netflix-logo {
+    height: 32px;
+  }
+
+  .profile-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .profile-grid {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .profile-avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .eyes {
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .eye {
+    width: 6px;
+    height: 6px;
+  }
+
+  .smile {
+    width: 25px;
+    height: 12px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .loading-text {
+    font-size: 1rem;
+  }
+
+  .spinner {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-content h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .profile-grid {
+    gap: 25px;
+  }
+
+  .profile-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .eyes {
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .eye {
+    width: 5px;
+    height: 5px;
+  }
+
+  .smile {
+    width: 20px;
+    height: 10px;
+    border-width: 2px;
+  }
+
+  .profile-name {
+    font-size: 1.1rem;
+  }
+
+  .loading-text {
+    font-size: 0.9rem;
+  }
+
+  .manage-profiles-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+  }
+
+  .children-label {
+    font-size: 0.7rem;
+    bottom: 8px;
+  }
+}
