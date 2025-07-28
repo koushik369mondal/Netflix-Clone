@@ -149,14 +149,41 @@
         font-size: 13px;
         margin-top: 4px;
       }
+
+      .netflix-logo-fixed {
+        position: fixed;
+        top: 24px;
+        left: 32px;
+        z-index: 100;
+        background: none;
+        padding: 0;
+      }
+
+      .netflix-logo-img {
+        max-width: 160px;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
       @media (max-width: 480px) {
         .container {
           padding: 30px 20px;
+        }
+        .netflix-logo-fixed {
+          top: 12px;
+          left: 12px;
+        }
+        .netflix-logo-img {
+          max-width: 100px;
         }
       }
     </style>
   </head>
   <body>
+    <!-- Netflix Logo at the top left corner -->
+    <div class="netflix-logo-fixed">
+      <img src="assets/images/netflix-logo.png" alt="Netflix Logo" class="netflix-logo-img" />
+    </div>
     <div class="container">
       <h2>Create Your Account</h2>
       <form id="registerForm">
