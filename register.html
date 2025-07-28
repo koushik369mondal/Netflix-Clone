@@ -142,29 +142,54 @@
       text-decoration: none;
     }
 
-    .help-text {
-      color: #ff4c4c;
-      font-size: 13px;
-      margin-top: 4px;
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 30px 20px;
+      .help-text {
+        color: #ff4c4c;
+        font-size: 13px;
+        margin-top: 4px;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="container">
-    <h2>Create Your Account</h2>
-    <form id="registerForm">
-      <div class="input-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required />
-        <div class="help-text" id="usernameHelp"></div>
-      </div>
+      .netflix-logo-fixed {
+        position: fixed;
+        top: 24px;
+        left: 32px;
+        z-index: 100;
+        background: none;
+        padding: 0;
+      }
+
+      .netflix-logo-img {
+        max-width: 160px;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      @media (max-width: 480px) {
+        .container {
+          padding: 30px 20px;
+        }
+        .netflix-logo-fixed {
+          top: 12px;
+          left: 12px;
+        }
+        .netflix-logo-img {
+          max-width: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Netflix Logo at the top left corner -->
+    <div class="netflix-logo-fixed">
+      <img src="assets/images/netflix-logo.png" alt="Netflix Logo" class="netflix-logo-img" />
+    </div>
+    <div class="container">
+      <h2>Create Your Account</h2>
+      <form id="registerForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+          <div class="help-text" id="usernameHelp"></div>
+        </div>
 
       <div class="input-group">
         <label for="email">Email address</label>
