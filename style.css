@@ -246,6 +246,7 @@ html {
 
 .hero-buttons {
   display: flex;
+  align-items: center;
   gap: 12px;
   width: 100%;
   max-width: 600px;
@@ -275,6 +276,13 @@ html {
 }
 .hero-buttons input[type="email"]::placeholder {
   color: #999;
+}
+.hero-buttons button {
+  flex: 1;
+  min-width: 120px;
+  padding: 16px 20px;
+  font-size: 15px;
+  border: none;
 }
 
 .separation {
