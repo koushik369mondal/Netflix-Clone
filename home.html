@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Netflix Clone - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="home.css" />
+  <title>Netflix Clone</title>
+  
 </head>
-
 <body>
+ 
+<div class="left">
+  <div class="logo">
+    <img  src="assets/images/netflix-logo.png"alt="Netflix Logo">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Search</a></li>
+    <li><a href="#">Trending</a></li>
+    <li><a href="#">New Releases</a></li>
+    <li><a href="#">Popular</a></li>
+    <li><a href="#">Top Rated</a></li>
+    <li><a href="#">Genres</a></li>
+    <li><a href="#">My List</a></li>
+    <li><a href="#">Watch Again</a></li>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Log Out</a></li>
+  </ul>
+</div>
 
-  <header>
-    <div class="logo">
-      <img src="assets/images/netflix-logo.png" alt="Netflix Logo" class="logo-img" />
+  <div class="right">
+    <input class="search-bar" type="text" placeholder="Search Movies Here"/>
+
+    <div class="trending-section">Trendings</div>
+    <div class="cards-container">
+      <div class="card"><img src="assets/images/movie-card-1.webp" alt="Movie 1"/></div>
+      <div class="card"><img src="assets/images/movie-card-2.webp" alt="Movie 2"/></div>
+      <div class="card"><img src="assets/images/movie-card-3.webp" alt="Movie 3"/></div>
+      <div class="card"><img src="assets/images/movie-card-4.webp" alt="Movie 4"/></div>
+      <div class="card"><img src="assets/images/movie-card-5.webp" alt="Movie 5"/></div>
+      <div class="card"><img src="assets/images/movie-card-6.webp" alt="Movie 6"/></div>
+      <div class="card"><img src="assets/images/movie-card-7.webp" alt="Movie 7"/></div>
+   
     </div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">TV Shows</a></li>
-      <li><a href="#">Movies</a></li>
-      <li><a href="#">My List</a></li>
-    </ul>
-  </header>
 
-  <!-- Home Section -->
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>Welcome to Netflix</h1>
-      <p>Watch your favorite movies and shows anytime, anywhere.</p>
-      <button onclick="watchNow()">Watch Now</button>
+    <div class="recommended-section">Recommended for you</div>
+    <div class="cards-container">
+      <div class="card"><img src="assets/images/movie-card-8.webp" alt="Movie 1"/></div>
+      <div class="card"><img src="assets/images/movie-card-9.jpg" alt="Movie 2"/></div>
+      <div class="card"><img src="assets/images/movie-card-10.webp" alt="Movie 3"/></div>
+      <div class="card"><img src="assets/images/movie-card-11.webp" alt="Movie 4"/></div>
+      <div class="card"><img src="assets/images/movie-card-12.webp" alt="Movie 5"/></div>
+      <div class="card"><img src="assets/images/movie-card-13.webp" alt="Movie 6"/></div>
+      <div class="card"><img src="assets/images/movie-card-14.webp" alt="Movie 7"/></div>
+   
     </div>
-  </section>
 
-  <section class="trending">
-    <h2>Trending Now</h2>
-    <div class="movie-grid">
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Wonder Woman">
-      </div>
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/q719jXXEzOoYaps6babgKnONONX.jpg" alt="Soul">
-      </div>
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/6agKYU5IQFpuDyUYPu39w7UCRrJ.jpg" alt="Extraction">
-      </div>
-
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" alt="Tenet">
-      </div>
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg" alt="Inception">
-      </div>
-
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/yF1eOkaYvwiORauRCPWznV9xVvi.jpg" alt="John Wick 4">
-      </div>
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg" alt="The Flash">
-      </div>
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg" alt="Stranger Things">
-      </div>
-      <div class="movie-card">
-        <img src="https://image.tmdb.org/t/p/w300/94xxm5701CzOdJdUEdIuwqZaowx.jpg" alt="Spider-Man: No Way Home">
-      </div>
-
+    <div class="new-releases-section">New-Releases</div>
+    <div class="cards-container">
+      <div class="card"><img src="assets/images/movie-card-15.webp" alt="Movie 1"/></div>
+      <div class="card"><img src="assets/images/movie-card-16.webp" alt="Movie 2"/></div>
+      <div class="card"><img src="assets/images/movie-card-17.jpg" alt="Movie 3"/></div>
+      <div class="card"><img src="assets/images/movie-card-17.webp" alt="Movie 4"/></div>
+      <div class="card"><img src="assets/images/movie-card-1.webp" alt="Movie 5"/></div>
+      <div class="card"><img src="assets/images/movie-card-19.jpg" alt="Movie 6"/></div>
+      <div class="card"><img src="assets/images/movie-card-19.webp" alt="Movie 7"/></div>
+   
     </div>
-    </div>
-  </section>
 
 
-  <script src="home.js"></script>
+  </div>
+
 </body>
-
 </html>
