@@ -8,12 +8,251 @@
   transition: all 0.3s ease; /* Smooth transitions f */
 }
 
-body {
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
+/* Theme Variable */
+:root {
+ --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --bg-tertiary: #222222;
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --text-muted: #b3b3b3;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --separation-bg: linear-gradient(90deg, #222, #333, #222);
 }
+
+/* Light Theme Variables */
+:root.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-muted: #666666;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --separation-bg: linear-gradient(90deg, #ddd, #ccc, #ddd);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Language button styles - Fixed to match original */
+.lang-btn {
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Theme toggle button styles */
+.nav-buttons .theme-btn {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Light theme button */
+:root.light-theme .nav-buttons .theme-btn {
+  color: #000000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Icon styles */
+.nav-buttons .theme-btn .theme-icon {
+  width: 18px !important;
+  height: 18px !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Text */
+.nav-buttons .theme-btn .theme-text {
+  font-weight: 500 !important;
+  color: #ffffff !important;
+}
+
+:root.light-theme .nav-buttons .theme-btn .theme-text {
+  color: #000000 !important;
+}
+
+:root.light-theme .lang-btn {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: var(--text-primary);
+}
+
+/* Hover effects */
+.nav-buttons .theme-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-2px) scale(1.05) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+:root.light-theme .nav-buttons .theme-btn:hover {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  border-color: rgba(0, 0, 0, 0.9) !important;
+  color: #000000 !important;
+}
+
+.nav-buttons .theme-btn:hover .theme-icon {
+  transform: rotate(15deg) scale(1.1) !important;
+}
+
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px) scale(1.05);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Force icon visibility with maximum specificity */
+#theme-toggle {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 24px !important;
+  height: 24px !important;
+  cursor: pointer !important;
+  margin-right: 15px !important;
+  border: none !important;
+  background: none !important;
+  filter: none !important;
+  position: relative !important;
+  z-index: 10000 !important;
+  /* Add a temporary border to see if element is there */
+  border: 1px solid red !important;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1) rotate(15deg) !important;
+  opacity: 1 !important;
+}
+
+/* Ensure nav-buttons container doesn't hide it */
+.nav-buttons {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  z-index: 9999 !important;
+  position: relative !important;
+}
+
+/* Remove any conflicting styles */
+.theme-icon-only {
+  display: none !important; /* Remove this class if it exists */
+}
+
+.theme-icon-only:hover {
+  transform: scale(1.1) rotate(15deg) !important;
+}
+
+/* Simple FAQ heading color fix */
+:root.light-theme .faq h2 {
+  color: #000000 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+
+
+/* Content sections theme - Fixed text visibility */
+.first {
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Additional override for theme button visibility */
+button#theme-toggle {
+  color: #ffffff !important;
+}
+
+:root.light-theme button#theme-toggle {
+  color: #000000 !important;
+}
+
+button#theme-toggle .theme-text {
+  color: inherit !important;
+}
+
+button#theme-toggle .theme-icon {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.first span:first-child {
+  display: block;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+:root.light-theme .first span:first-child {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  color: var(--text-primary);
+}
+
+.first span:last-child {
+  display: block;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Ensure all sections inherit theme colors */
+.first.second {
+  direction: rtl;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.first.second > * {
+  direction: ltr;
+}
+
+.first.third {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.first.animate-on-scroll {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
 
 html {
   scroll-behavior: smooth;
