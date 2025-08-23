@@ -33,6 +33,9 @@
 }
 
 body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: "Poppins", sans-serif;
@@ -1023,4 +1026,78 @@ footer::before {
 .animate-on-scroll.animated {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ===========================================
+   FAQ SECTION - LIGHT THEME STYLING
+   =========================================== */
+
+/* FAQ section background in light theme */
+:root.light-theme .faq {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* FAQ heading in light theme */
+:root.light-theme .faq h2 {
+  color: #000000 !important;
+  background: linear-gradient(135deg, #333 0%, #000 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* FAQ paragraph text in light theme */
+:root.light-theme .faq p {
+  color: #333333 !important;
+}
+
+/* FAQ boxes in light theme */
+:root.light-theme .faqbox {
+  background-color: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+:root.light-theme .faqbox:hover {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* FAQ headers in light theme */
+:root.light-theme .faq-header {
+  background: #f8f9fa !important;
+  color: #000000 !important;
+}
+
+:root.light-theme .faq-header:hover {
+  background: #e9ecef !important;
+}
+
+/* FAQ questions in light theme */
+:root.light-theme .faq-header .question {
+  color: #000000 !important;
+}
+
+:root.light-theme .faq-header:hover .question {
+  color: #333333 !important;
+}
+
+/* FAQ answers in light theme */
+:root.light-theme .answer {
+  background: #f8f9fa !important;
+  color: #666666 !important;
+}
+
+:root.light-theme .faqbox.open .answer {
+  background: #f8f9fa !important;
+  color: #666666 !important;
+}
+
+/* FAQ icons in light theme */
+:root.light-theme .faq .icon {
+  color: #000000 !important;
+}
+
+/* FAQ hover effects for light theme */
+:root.light-theme .faqbox.open .icon {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3)) !important;
 }
