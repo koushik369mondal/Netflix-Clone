@@ -24,29 +24,27 @@
     <div class="main">
       <!-- Navigation -->
       <nav class="navbar" id="navbar">
-        <div class="logo">
-          <!-- Netflix Logo Image -->
-          <img
-            src="assets/images/netflix-logo.png"
-            alt="Netflix Logo"
-            class="netflix-logo-img"
-          />
-        </div>
-        <ul class="nav-links">
-           <li style="--i: 1"><a href="home.html">Home</a></li>
-          <li style="--i: 2"><a href="#">TV Shows</a></li>
-          <li style="--i: 3"><a href="movies.html">Movies</a></li>
-          <li style="--i: 4"><a href="#">New & Popular</a></li>
-          <li style="--i: 5"><a href="#">My List</a></li>
-        </ul>
-        <div class="nav-buttons">
-        <button id="lang-toggle" data-lang="en" style="background: none; border: 1px solid white; color: white; padding: 6px 12px; border-radius: 5px; cursor: pointer;">
-  <i class="fas fa-globe"></i> English
+  <div class="logo">
+    <img src="assets/images/netflix-logo.png" alt="Netflix Logo" class="netflix-logo-img" />
+  </div>
+  <ul class="nav-links">
+    <li style="--i: 1"><a href="home.html">Home</a></li>
+    <li style="--i: 2"><a href="#">TV Shows</a></li>
+    <li style="--i: 3"><a href="movies.html">Movies</a></li>
+    <li style="--i: 4"><a href="#">New & Popular</a></li>
+    <li style="--i: 5"><a href="#">My List</a></li>
+  </ul>
+  <div class="nav-buttons">
+    <!-- Direct icon placement -->
+    <img id="theme-toggle" src="darkmode.jpg" alt="Theme" style="width: 24px; height: 24px; cursor: pointer; margin-right: 15px;">
+    
+    <button id="lang-toggle" data-lang="en" style="background: none; border: 1px solid white; color: white; padding: 6px 12px; border-radius: 5px; cursor: pointer;">
+      <i class="fas fa-globe"></i> English
+    </button>
+    <a href="signin.html" class="btn btn-red-sm">Sign In</a>
+  </div>
+</nav>
 
-              </button>
-          <a href="signin.html" class="btn btn-red-sm">Sign In</a>
-        </div>
-      </nav>
 
       <div class="box"></div>
 
