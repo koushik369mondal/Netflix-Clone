@@ -1028,9 +1028,6 @@ footer::before {
   transform: translateY(0);
 }
 
-/* ===========================================
-   FAQ SECTION - LIGHT THEME STYLING
-   =========================================== */
 
 /* FAQ section background in light theme */
 :root.light-theme .faq {
@@ -1100,4 +1097,197 @@ footer::before {
 /* FAQ hover effects for light theme */
 :root.light-theme .faqbox.open .icon {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3)) !important;
+}
+
+/* Navbar background in dark theme - SOLID */
+.navbar {
+  background: #000000 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar.scrolled {
+  background: #000000 !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Navbar links in dark theme */
+.navbar .nav-links a {
+  color: #ffffff !important;
+}
+
+.navbar .nav-links a:hover {
+  color: #e5e5e5 !important;
+}
+
+/* Navbar buttons in dark theme */
+.navbar .btn {
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar .btn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar .btn-red-sm {
+  background: #e50914 !important;
+  border-color: #e50914 !important;
+  color: #ffffff !important;
+}
+
+.navbar .btn-red-sm:hover {
+  background: #f40612 !important;
+}
+
+/* Theme toggle and language button in dark mode */
+.navbar #theme-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar #lang-toggle {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar #lang-toggle:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Navbar background in light theme */
+:root.light-theme .navbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+:root.light-theme .navbar.scrolled {
+  background: #ffffff !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Navbar links in light theme */
+:root.light-theme .navbar .nav-links a {
+  color: #000000 !important;
+}
+
+:root.light-theme .navbar .nav-links a:hover {
+  color: #333333 !important;
+}
+
+/* Navbar buttons in light theme */
+:root.light-theme .navbar .btn {
+  color: #000000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+
+:root.light-theme .navbar .btn:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+:root.light-theme .navbar .btn-red-sm {
+  background: #e50914 !important;
+  border-color: #e50914 !important;
+  color: #ffffff !important;
+}
+
+:root.light-theme .navbar .btn-red-sm:hover {
+  background: #f40612 !important;
+}
+
+/* Theme toggle and language button in light mode */
+:root.light-theme .navbar #theme-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+
+:root.light-theme .navbar #lang-toggle {
+  background: transparent !important;
+  color: #000000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+
+:root.light-theme .navbar #lang-toggle:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Footer background in light theme */
+:root.light-theme footer {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+  color: #000000 !important;
+}
+
+:root.light-theme footer::before {
+  background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.3), transparent) !important;
+}
+
+/* Footer contact section in light theme */
+:root.light-theme footer .footer-contact p {
+  color: #666666 !important;
+}
+
+:root.light-theme footer .footer-contact a {
+  color: #e50914 !important;
+}
+
+:root.light-theme footer .footer-contact a:hover {
+  color: #f40612 !important;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.3) !important;
+}
+
+/* Footer columns in light theme */
+:root.light-theme footer .footer-column {
+  background: rgba(0, 0, 0, 0.02) !important;
+}
+
+:root.light-theme footer .footer-column:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+:root.light-theme footer .footer-column h4 {
+  color: #000000 !important;
+}
+
+:root.light-theme footer .footer-column:hover h4 {
+  color: #e50914 !important;
+}
+
+:root.light-theme footer .footer-column a {
+  color: #666666 !important;
+}
+
+:root.light-theme footer .footer-column a:hover {
+  color: #000000 !important;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Footer bottom section in light theme */
+:root.light-theme footer .footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+:root.light-theme footer .footer-bottom p {
+  color: #666666 !important;
+}
+
+/* Social links in light theme */
+:root.light-theme footer .social-links a {
+  color: #666666 !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+:root.light-theme footer .social-links a:hover {
+  color: #e50914 !important;
+  background: rgba(229, 9, 20, 0.1) !important;
+  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.2) !important;
 }
