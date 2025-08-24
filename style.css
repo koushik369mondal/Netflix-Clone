@@ -685,9 +685,17 @@ html {
 .icon {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
+
+.faq-plus-icon {
+  font-size: 30px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  color: white;
+}
 .faqbox.open .icon {
   transform: rotate(45deg) scale(1.1);
   filter: drop-shadow(0 0 10px rgba(229, 9, 20, 0.5));
+  transition: transform 0.4s ease;
 }
 
 .answer {
@@ -712,6 +720,10 @@ html {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0s, 0.05s, 0.05s;
+}
+
+.answer.show {
+  display: block;
 }
 
 .faq-cta {
