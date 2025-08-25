@@ -312,3 +312,18 @@ function switchLanguage() {
   const btn = document.getElementById('lang-btn');
   btn.textContent = currentLang === 'en' ? '🌐 हिंदी' : '🌐 English';
 }
+
+
+//FAQ plus icon toggle to cross when ans opens
+document.querySelectorAll('.faq-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const icon = header.querySelector('.faq-plus-icon');
+    const answer = header.nextElementSibling;
+
+    // toggle icon
+    icon.textContent = icon.textContent === '+' ? '×' : '+';
+
+    // toggle answer visibility
+    answer.classList.toggle('show');
+  });
+});
