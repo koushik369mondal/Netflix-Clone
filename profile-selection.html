@@ -126,3 +126,14 @@
     <script src="profile-selection.js"></script>
 </body>
 </html>
+
+// Select all profile cards
+const profiles = document.querySelectorAll('.profile-card');
+
+// Loop through each card and add click event
+profiles.forEach(profile => {
+  profile.addEventListener('click', () => {
+    // You can redirect to home.html or any page
+    window.location.href = 'home.html';
+  });
+});
