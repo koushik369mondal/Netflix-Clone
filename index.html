@@ -37,16 +37,44 @@
     <li style="--i: 5"><a href="#">My List</a></li>
   </ul>
   <div class="nav-buttons">
-    <!-- Direct icon placement -->
-    <img id="theme-toggle" src="darkmode.jpg" alt="Theme" style="width: 24px; height: 24px; cursor: pointer; margin-right: 15px;">
-    
-    <button id="lang-toggle" data-lang="en" style="background: none; border: 1px solid white; color: white; padding: 6px 12px; border-radius: 5px; cursor: pointer;">
-      <i class="fas fa-globe"></i> English
+    <!-- Hamburger Menu for Mobile -->
+    <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-    <a href="signin.html" class="btn btn-red-sm">Sign In</a>
+    
+    <!-- Desktop nav buttons -->
+    <div class="desktop-nav-buttons">
+      <!-- Direct icon placement -->
+      <img id="theme-toggle" src="darkmode.jpg" alt="Theme" style="width: 24px; height: 24px; cursor: pointer; margin-right: 15px;">
+      
+      <button id="lang-toggle" data-lang="en" style="background: none; border: 1px solid white; color: white; padding: 6px 12px; border-radius: 5px; cursor: pointer;">
+        <i class="fas fa-globe"></i> English
+      </button>
+      <a href="signin.html" class="btn btn-red-sm">Sign In</a>
+    </div>
   </div>
 </nav>
 
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+          <ul class="mobile-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+          </ul>
+          <div class="mobile-nav-buttons">
+            <button id="mobile-lang-toggle" data-lang="en">
+              <i class="fas fa-globe"></i> English
+            </button>
+            <a href="signin.html" class="btn btn-red-sm">Sign In</a>
+          </div>
+        </div>
+      </div>
 
       <div class="box"></div>
 
