@@ -1303,3 +1303,7 @@ footer::before {
   background: rgba(229, 9, 20, 0.1) !important;
   box-shadow: 0 10px 25px rgba(229, 9, 20, 0.2) !important;
 }
+
+:root.light-theme .back-to-top-progress .fas {
+  color: #000000 !important;
+}
