@@ -1,11 +1,15 @@
-/* @import url('./animations/loading-animation.css'); */
-
-/* Global Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s ease; /* Smooth transitions f */
+  transition: all 0.3s ease; 
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Theme Variable */
@@ -182,16 +186,17 @@ body {
 
 /* Content sections theme - Fixed text visibility */
 .first {
-  padding: 100px 50px;
+  padding: 8% 4%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 4%;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  width: 100%;
 }
 
 /* Additional override for theme button visibility */
@@ -314,7 +319,7 @@ html {
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 15px 50px;
+  padding: 15px 4%;
   height: 70px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
   display: flex;
@@ -428,6 +433,7 @@ html {
 
 .main {
   position: relative;
+   width: 100%;
 }
 .box {
   /* Background overlay */
@@ -450,10 +456,11 @@ html {
   justify-content: center;
   text-align: center;
   min-height: 100vh;
-  padding: 120px 20px 80px;
+  padding: 120px 4% 80px;
   animation: fadeInUp 1.2s ease;
   position: relative;
   z-index: 10;
+  width: 100%;
 }
 .hero span {
   display: block;
@@ -534,6 +541,7 @@ html {
   background: linear-gradient(90deg, #222, #333, #222);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .separation::after {
   content: "";
@@ -548,14 +556,15 @@ html {
 
 /* Feature Sections - Engaging & Animated! */
 .first {
-  padding: 100px 50px;
+  padding: 8% 4%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 4%;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 .first.second {
   direction: rtl; /* Reverse order for alternating sections */
@@ -583,49 +592,57 @@ html {
 /* For 1st TV and vedio */
 .secImg {
   position: relative;
+  width: 100%;
 }
 .secImg img {
   position:relative;
-    z-index: 10;
-    width:490px
+  z-index: 10;
+  width: 100%;
+  max-width: 490px;
 }
 .secImg:hover {
   transform: scale(1.05) rotate(0.05deg);
 }
 .secImg video {
   position: absolute;
-    max-width: 360px;
-    top: 75px;
-    left: 65px;
+  width: 73%;
+  max-width: 360px;
+  top: 15%;
+  left: 13%;
 }
+
 /*For 2nd TV and vedio */
 .imgno3{
-    position: relative;
+  position: relative;
+  width: 100%;
 }
 .imgno3 img{
-    position: relative;
-    padding-top: 50px;
-    height:408px;
-    width: 544px;
-    z-index: 10;
+  position: relative;
+  padding-top: 9%;
+  height: auto;
+  width: 100%;
+  max-width: 544px;
+  z-index: 10;
 }
 .imgno3:hover {
   transform: scale(1.05) rotate(0.05deg);
 }
 .imgno3 video{
-    position: absolute;
-    height: 280px;
-    width: 350px;
-    top:65px;
-    left: 100px;
+  position: absolute;
+  height: 51%;
+  width: 64%;
+  max-width: 350px;
+  top: 16%;
+  left: 18%;
 }
 
 /*Frequent ask question  */
 
 .faq {
-  padding: 100px 50px;
+  padding: 8% 4%;
   max-width: 900px;
   margin: 0 auto;
+  width: 100%;
 }
 .faq h2 {
   text-align: center;
@@ -649,6 +666,7 @@ html {
   overflow: hidden;
   position: relative; /* For the subtle border effect */
   border: 1px solid transparent; /* Initial transparent border */
+  width: 100%;
 }
 .faqbox:hover {
   transform: translateY(-2px);
@@ -665,6 +683,7 @@ html {
   align-items: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .faq-header:hover {
   background: #404040;
@@ -713,6 +732,7 @@ html {
     opacity 0.3s 0.1s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.3s 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: max-height, opacity, transform;
+  width: 100%;
 }
 .faqbox.open .answer {
   padding: 30px;
@@ -733,6 +753,7 @@ html {
   animation-delay: 0.8s;
   opacity: 0;
   animation-fill-mode: forwards;
+  width: 100%;
 }
 .faq-cta p {
   font-size: 1.2rem;
@@ -791,10 +812,11 @@ html {
 
 /* Enhanced Footer - Elegant & Interactive! */
 footer {
-  padding: 80px 50px 30px;
+  padding: 8% 4% 30px;
   background: linear-gradient(135deg, #000 0%, #111 100%);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 footer::before {
   /* Top border shimmer */
@@ -813,6 +835,7 @@ footer::before {
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .footer-contact {
@@ -821,6 +844,7 @@ footer::before {
   transform: translateY(20px);
   opacity: 0;
   animation-fill-mode: forwards;
+  width: 100%;
 }
 .footer-contact p {
   color: #b3b3b3;
@@ -843,6 +867,7 @@ footer::before {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-bottom: 40px;
+  width: 100%;
 }
 .footer-column {
   animation: fadeInUp 1s ease;
@@ -923,6 +948,7 @@ footer::before {
   animation-fill-mode: forwards;
   position: relative;
   margin-bottom: 80px; 
+  width: 100%;
 }
 .footer-bottom p {
   color: #b3b3b3;
@@ -1152,7 +1178,7 @@ footer::before {
 /* Mobile Responsiveness - Adapting to all screens! */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 20px;
+    padding: 10px 4%;
     height: 60px;
   }
   .netflix-logo {
@@ -1336,6 +1362,20 @@ footer::before {
     text-align: center;
     margin-bottom: 100px; /* More margin for mobile */
   }
+  
+  /* Responsive adjustments for videos */
+  .secImg video {
+    width: 70%;
+    top: 15%;
+    left: 15%;
+  }
+  
+  .imgno3 video {
+    width: 60%;
+    height: 50%;
+    top: 15%;
+    left: 20%;
+  }
 }
 
 /* Touch-friendly improvements for smaller screens */
@@ -1404,6 +1444,22 @@ footer::before {
     bottom: 80px !important;
     right: 15px !important;
   }
+  
+  .hero {
+    padding: 100px 4% 60px;
+  }
+  
+  .first {
+    padding: 12% 4%;
+  }
+  
+  .faq {
+    padding: 12% 4%;
+  }
+  
+  footer {
+    padding: 12% 4% 30px;
+  }
 }
 
 .animate-on-scroll {
@@ -1413,137 +1469,6 @@ footer::before {
 .animate-on-scroll.animated {
   opacity: 1;
   transform: translateY(0);
-}
-
-
-/* FAQ section background in light theme */
-:root.light-theme .faq {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
-/* FAQ heading in light theme */
-:root.light-theme .faq h2 {
-  color: #000000 !important;
-  background: linear-gradient(135deg, #333 0%, #000 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-}
-
-/* FAQ paragraph text in light theme */
-:root.light-theme .faq p {
-  color: #333333 !important;
-}
-
-/* FAQ boxes in light theme */
-:root.light-theme .faqbox {
-  background-color: transparent !important;
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-}
-
-:root.light-theme .faqbox:hover {
-  border-color: rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
-}
-
-/* FAQ headers in light theme */
-:root.light-theme .faq-header {
-  background: #f8f9fa !important;
-  color: #000000 !important;
-}
-
-:root.light-theme .faq-header:hover {
-  background: #e9ecef !important;
-}
-
-/* FAQ questions in light theme */
-:root.light-theme .faq-header .question {
-  color: #000000 !important;
-}
-
-:root.light-theme .faq-header:hover .question {
-  color: #333333 !important;
-}
-
-/* FAQ answers in light theme */
-:root.light-theme .answer {
-  background: #f8f9fa !important;
-  color: #666666 !important;
-}
-
-:root.light-theme .faqbox.open .answer {
-  background: #f8f9fa !important;
-  color: #666666 !important;
-}
-
-/* FAQ icons in light theme */
-:root.light-theme .faq .icon {
-  color: #000000 !important;
-}
-
-/* FAQ hover effects for light theme */
-:root.light-theme .faqbox.open .icon {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3)) !important;
-}
-
-/* Navbar background in dark theme - SOLID */
-.navbar {
-  background: #000000 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
-}
-
-.navbar.scrolled {
-  background: #000000 !important;
-  backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
-}
-
-/* Navbar links in dark theme */
-.navbar .nav-links a {
-  color: #ffffff !important;
-}
-
-.navbar .nav-links a:hover {
-  color: #e5e5e5 !important;
-}
-
-/* Navbar buttons in dark theme */
-.navbar .btn {
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.7) !important;
-}
-
-.navbar .btn:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.navbar .btn-red-sm {
-  background: #e50914 !important;
-  border-color: #e50914 !important;
-  color: #ffffff !important;
-}
-
-.navbar .btn-red-sm:hover {
-  background: #f40612 !important;
-}
-
-/* Theme toggle and language button in dark mode */
-.navbar #theme-toggle {
-  border: 1px solid rgba(255, 255, 255, 0.7) !important;
-}
-
-.navbar #lang-toggle {
-  background: transparent !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.7) !important;
-}
-
-.navbar #lang-toggle:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Navbar background in light theme */
@@ -1613,6 +1538,10 @@ footer::before {
   color: #000000 !important;
 }
 
+:root.light-theme .faq-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+}
+
 :root.light-theme footer::before {
   background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.3), transparent) !important;
 }
@@ -1678,3 +1607,8 @@ footer::before {
   background: rgba(229, 9, 20, 0.1) !important;
   box-shadow: 0 10px 25px rgba(229, 9, 20, 0.2) !important;
 }
+
+:root.light-theme .back-to-top-progress .fas {
+  color: #000000 !important;
+}
+
