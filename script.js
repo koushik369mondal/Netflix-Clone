@@ -177,6 +177,132 @@ document.addEventListener("DOMContentLoaded", () => {
 
 console.log("🍿 Welcome to Netflix Clone! Made with ❤️ ")
 
+// ========== HAMBURGER MENU FUNCTIONALITY ==========
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+  const body = document.body;
+  
+  if (hamburgerMenu && mobileNavOverlay) {
+    // Toggle mobile menu
+    hamburgerMenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const isActive = hamburgerMenu.classList.contains('active');
+      
+      if (isActive) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+    
+    // Close menu when clicking on overlay
+    mobileNavOverlay.addEventListener('click', function(e) {
+      if (e.target === mobileNavOverlay) {
+        closeMobileMenu();
+      }
+    });
+    
+    // Close menu when clicking on mobile nav links
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        closeMobileMenu();
+      });
+    });
+    
+    // Close menu with ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mobileNavOverlay.classList.contains('active')) {
+        closeMobileMenu();
+      }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768 && mobileNavOverlay.classList.contains('active')) {
+        closeMobileMenu();
+      }
+    });
+    
+    function openMobileMenu() {
+      hamburgerMenu.classList.add('active');
+      mobileNavOverlay.classList.add('active');
+      body.style.overflow = 'hidden';
+      
+      // Add aria attributes for accessibility
+      hamburgerMenu.setAttribute('aria-expanded', 'true');
+      mobileNavOverlay.setAttribute('aria-hidden', 'false');
+      
+      // Focus management
+      const firstLink = mobileNavOverlay.querySelector('.mobile-nav-links a');
+      if (firstLink) {
+        setTimeout(() => firstLink.focus(), 300);
+      }
+    }
+    
+    function closeMobileMenu() {
+      hamburgerMenu.classList.remove('active');
+      mobileNavOverlay.classList.remove('active');
+      body.style.overflow = 'auto';
+      
+      // Add aria attributes for accessibility
+      hamburgerMenu.setAttribute('aria-expanded', 'false');
+      mobileNavOverlay.setAttribute('aria-hidden', 'true');
+      
+      // Return focus to hamburger button
+      hamburgerMenu.focus();
+    }
+    
+    // Initialize aria attributes
+    hamburgerMenu.setAttribute('aria-expanded', 'false');
+    mobileNavOverlay.setAttribute('aria-hidden', 'true');
+  }
+  
+  // Mobile language toggle functionality
+  const mobileLangToggle = document.getElementById('mobile-lang-toggle');
+  if (mobileLangToggle) {
+    mobileLangToggle.addEventListener('click', function() {
+      const currentLang = this.dataset.lang || 'en';
+      if (currentLang === 'en') {
+        this.innerHTML = '<i class="fas fa-globe"></i> हिन्दी';
+        this.dataset.lang = 'hi';
+      } else {
+        this.innerHTML = '<i class="fas fa-globe"></i> English';
+        this.dataset.lang = 'en';
+      }
+    });
+  }
+});
+
+// ========== ENHANCED TOUCH SUPPORT ==========
+// Add touch event support for better mobile experience
+document.addEventListener('DOMContentLoaded', function() {
+  // Add touch feedback to buttons
+  const buttons = document.querySelectorAll('.btn, .btn-red, .btn-red-sm, .faq-header');
+  
+  buttons.forEach(button => {
+    button.addEventListener('touchstart', function() {
+      this.style.transform = 'scale(0.98)';
+    }, { passive: true });
+    
+    button.addEventListener('touchend', function() {
+      this.style.transform = '';
+    }, { passive: true });
+  });
+  
+  // Prevent zoom on double tap for form inputs
+  const inputs = document.querySelectorAll('input[type="email"]');
+  inputs.forEach(input => {
+    input.addEventListener('touchend', function(e) {
+      e.preventDefault();
+      this.focus();
+    }, { passive: false });
+  });
+});
+
 
 // Loading Animation with Netflix Intro
 document.addEventListener('DOMContentLoaded', function () {
