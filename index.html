@@ -394,7 +394,7 @@
     }
   });
 
-  const chatBtn = document.getElementById('chatBtn');
+const chatBtn = document.getElementById('chatBtn');
 const chatPopup = document.getElementById('chatPopup');
 const chatClose = document.getElementById('chatClose');
 const messagesEl = document.getElementById('messages');
@@ -450,7 +450,7 @@ async function sendMessage() {
   const bubbleEl = typingEl.querySelector('.bubble');
 
   try {
-    const res = await fetch('http://localhost:5000/api/message', {
+    const res = await fetch('https://gemini-wt2r.onrender.com/api/message', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: userText }),
